@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^gozma14.local$ [NC]
+RewriteRule ^(.*)$ http://www.gozma14.local/$1 [R=301,L]

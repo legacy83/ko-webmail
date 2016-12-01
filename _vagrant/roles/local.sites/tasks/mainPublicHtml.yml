@@ -1,0 +1,27 @@
+---
+- name: Log Directories
+  file:
+    path: "/var/www/{{ item }}/logs"
+    owner: vagrant
+    group: vagrant
+    state: directory
+  with_items:
+    - gozma14.local
+    - www.gozma14.local
+
+- name: Public Html Directories
+  copy:
+    src: "public_html/{{ item }}/"
+    dest: /var/www/{{ item }}/public_html
+    owner: vagrant
+    group: vagrant
+  with_items:
+    - gozma14.local
+
+- name: Public Html Link
+  file:
+    src: /vagrant/web
+    dest: /var/www/www.gozma14.local/public_html
+    owner: vagrant
+    group: vagrant
+    state: link

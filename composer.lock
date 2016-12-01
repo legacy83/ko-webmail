@@ -1,0 +1,314 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "cb7abfc2e8607cf3b219784c75faca30",
+    "content-hash": "a2578f2e9982efedf9c28304f0ff4c2a",
+    "packages": [
+        {
+            "name": "npm-asset/bootstrap",
+            "version": "3.3.7",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.7.tgz",
+                "reference": null,
+                "shasum": "5a389394549f23330875a3b150656574f8a9eb71"
+            },
+            "require-dev": {
+                "npm-asset/btoa": "~1.1.2",
+                "npm-asset/glob": "~7.0.3",
+                "npm-asset/grunt": "~1.0.1",
+                "npm-asset/grunt-autoprefixer": "~3.0.4",
+                "npm-asset/grunt-contrib-clean": "~1.0.0",
+                "npm-asset/grunt-contrib-compress": "~1.3.0",
+                "npm-asset/grunt-contrib-concat": "~1.0.0",
+                "npm-asset/grunt-contrib-connect": "~1.0.0",
+                "npm-asset/grunt-contrib-copy": "~1.0.0",
+                "npm-asset/grunt-contrib-csslint": "~1.0.0",
+                "npm-asset/grunt-contrib-cssmin": "~1.0.0",
+                "npm-asset/grunt-contrib-htmlmin": "~1.5.0",
+                "npm-asset/grunt-contrib-jshint": "~1.0.0",
+                "npm-asset/grunt-contrib-less": "~1.3.0",
+                "npm-asset/grunt-contrib-pug": "~1.0.0",
+                "npm-asset/grunt-contrib-qunit": "~0.7.0",
+                "npm-asset/grunt-contrib-uglify": "~1.0.0",
+                "npm-asset/grunt-contrib-watch": "~1.0.0",
+                "npm-asset/grunt-csscomb": "~3.1.0",
+                "npm-asset/grunt-exec": "~1.0.0",
+                "npm-asset/grunt-html": "~8.0.1",
+                "npm-asset/grunt-jekyll": "~0.4.4",
+                "npm-asset/grunt-jscs": "~3.0.1",
+                "npm-asset/grunt-saucelabs": "~9.0.0",
+                "npm-asset/load-grunt-tasks": "~3.5.0",
+                "npm-asset/markdown-it": ">=7.0.0,<8.0.0",
+                "npm-asset/shelljs": ">=0.7.0,<0.8.0",
+                "npm-asset/shx": ">=0.1.2,<0.2.0",
+                "npm-asset/time-grunt": ">=1.3.0,<2.0.0"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/twbs/bootstrap/issues"
+                },
+                "npm-asset-files": [
+                    "dist",
+                    "fonts",
+                    "grunt",
+                    "js/*.js",
+                    "less/**/*.less",
+                    "Gruntfile.js",
+                    "LICENSE"
+                ],
+                "npm-asset-main": "./dist/js/npm",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/twbs/bootstrap.git"
+                },
+                "npm-asset-scripts": {
+                    "change-version": "node grunt/change-version.js",
+                    "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
+                    "test": "grunt test"
+                },
+                "npm-asset-engines": {
+                    "node": ">=0.10.1"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twitter, Inc."
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
+            ]
+        },
+        {
+            "name": "npm-asset/jquery",
+            "version": "3.1.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/jquery/-/jquery-3.1.1.tgz",
+                "reference": null,
+                "shasum": "347c1c21c7e004115e0a4da32cece041fad3c8a3"
+            },
+            "require-dev": {
+                "npm-asset/babel-preset-es2015": "6.6.0",
+                "npm-asset/commitplease": "2.6.1",
+                "npm-asset/core-js": "2.2.2",
+                "npm-asset/cross-spawn": "2.2.3",
+                "npm-asset/eslint-config-jquery": "1.0.0",
+                "npm-asset/grunt": "1.0.1",
+                "npm-asset/grunt-babel": "6.0.0",
+                "npm-asset/grunt-cli": "1.2.0",
+                "npm-asset/grunt-compare-size": "0.4.2",
+                "npm-asset/grunt-contrib-uglify": "1.0.1",
+                "npm-asset/grunt-contrib-watch": "1.0.0",
+                "npm-asset/grunt-eslint": "19.0.0",
+                "npm-asset/grunt-git-authors": "3.2.0",
+                "npm-asset/grunt-jsonlint": "1.0.7",
+                "npm-asset/grunt-newer": "1.2.0",
+                "npm-asset/grunt-npmcopy": "0.1.0",
+                "npm-asset/gzip-js": "0.3.2",
+                "npm-asset/husky": "0.11.4",
+                "npm-asset/insight": "0.8.1",
+                "npm-asset/jsdom": "5.6.1",
+                "npm-asset/load-grunt-tasks": "3.5.0",
+                "npm-asset/native-promise-only": "0.8.1",
+                "npm-asset/promises-aplus-tests": "2.1.2",
+                "npm-asset/q": "1.4.1",
+                "npm-asset/qunit-assert-step": "1.0.3",
+                "npm-asset/qunitjs": "1.23.1",
+                "npm-asset/requirejs": "2.2.0",
+                "npm-asset/sinon": "1.17.3",
+                "npm-asset/sizzle": "2.3.3",
+                "npm-asset/strip-json-comments": "2.0.1",
+                "npm-asset/testswarm": "1.1.0"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/jquery/jquery/issues"
+                },
+                "npm-asset-main": "dist/jquery.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/jquery/jquery.git"
+                },
+                "npm-asset-scripts": {
+                    "build": "npm install && grunt",
+                    "start": "grunt watch",
+                    "test": "grunt && grunt test:slow",
+                    "precommit": "grunt lint:newer",
+                    "commitmsg": "node node_modules/commitplease"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jQuery Foundation and other contributors",
+                    "url": "https://github.com/jquery/jquery/blob/3.1.1/AUTHORS.txt"
+                }
+            ],
+            "description": "JavaScript library for DOM operations",
+            "homepage": "https://jquery.com",
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ]
+        },
+        {
+            "name": "npm-asset/requirejs",
+            "version": "2.3.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/requirejs/-/requirejs-2.3.2.tgz",
+                "reference": null,
+                "shasum": "0eaa870d4c7db3b15dd1322e6b65b0388fc4b2c6"
+            },
+            "bin": {
+                "r.js": "./bin/r.js",
+                "r_js": "./bin/r.js"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/jrburke/r.js/issues"
+                },
+                "npm-asset-main": "./bin/r.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/jrburke/r.js.git"
+                },
+                "npm-asset-scripts": [],
+                "npm-asset-engines": {
+                    "node": ">=0.4.0"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Burke",
+                    "email": "jrburke@gmail.com",
+                    "url": "http://github.com/jrburke"
+                }
+            ],
+            "description": "Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer",
+            "homepage": "http://github.com/jrburke/r.js"
+        },
+        {
+            "name": "npm-asset/requirejs-text",
+            "version": "2.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/requirejs/text.git",
+                "reference": "d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/requirejs/text/zipball/d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f",
+                "reference": "d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f",
+                "shasum": ""
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "web": "https://github.com/requirejs/text/issues"
+                },
+                "npm-asset-main": "text.js",
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "https://github.com/requirejs/text.git"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An AMD loader plugin for loading text resources."
+        },
+        {
+            "name": "npm-asset/sammy",
+            "version": "0.7.6",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/sammy/-/sammy-0.7.6.tgz",
+                "reference": null,
+                "shasum": "464fe54d1f89661cc3a988006305711321e9a9c1"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-main": "lib/sammy.js",
+                "npm-asset-directories": [],
+                "npm-asset-scripts": []
+            },
+            "description": "Sammy is a RESTful Evented JavaScript framework built on top of jQuery",
+            "homepage": "http://code.quirkey.com/sammy",
+            "keywords": [
+                "framework",
+                "jquery",
+                "sammy"
+            ]
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "trsenna/gozma14",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trsenna/gozma14.git",
+                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "shasum": ""
+            },
+            "type": "project",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thiago Senna",
+                    "homepage": "http://thremes.com.br"
+                }
+            ],
+            "description": "Easily vagrant up ubuntu/trusty64 machines with ansible roles.",
+            "support": {
+                "issues": "https://github.com/trsenna/gozma14/issues",
+                "source": "https://github.com/trsenna/gozma14"
+            },
+            "time": "2016-07-15 00:43:01"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

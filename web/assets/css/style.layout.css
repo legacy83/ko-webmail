@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+body {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*--------------------------------------------------------------
+# Header & Footer
+--------------------------------------------------------------*/
+.header,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .header,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    border-top: 1px solid #e5e5e5;
+    color: #777;
+    margin-top: 60px;
+    padding-top: 19px;
+}
+
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
