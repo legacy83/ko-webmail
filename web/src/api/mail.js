@@ -2,30 +2,21 @@
 
 define(function (require) {
     var api = {},
+        _ = require('lodash'),
         jquery = require('jquery');
 
-    var filterMailById = function (mails, mailId) {
-        var found = null;
-        jquery.each(mails, function (index, val) {
-            if (val.id == mailId) found = val;
-        });
-
-        return found;
+    var filterById = function (mails, mailId) {
+        return _.filter(mails, {id: parseInt(mailId)});
     };
 
-    var filterMailByFolder = function (mails, folder) {
-        var found = [];
-        jquery.each(mails, function (index, val) {
-            if (val.folder == folder) found.push(val);
-        });
-
-        return found;
+    var filterByFolder = function (mails, folder) {
+        return _.filter(mails, {folder: folder});
     };
 
     api.get = function (mailId) {
         var deferred = jquery.Deferred();
         jquery.get('/data/mail.json', function (data) {
-            deferred.resolve(filterMailById(data.mails, mailId));
+            deferred.resolve(filterById(data.mails, mailId)[0]);
         });
 
         return deferred.promise();
@@ -36,7 +27,7 @@ define(function (require) {
         jquery.get('/data/mail.json', function (data) {
             deferred.resolve({
                 id: folder,
-                mails: filterMailByFolder(data.mails, folder)
+                mails: filterByFolder(data.mails, folder)
             });
         });
 

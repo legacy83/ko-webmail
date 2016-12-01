@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c3120bbb3cd0fc78b8c87d82cc72585c",
-    "content-hash": "2256e56b6abcd6ad7099d4a505c6266f",
+    "hash": "9e63eff39b7d304ebb151f994d9871ad",
+    "content-hash": "1389236a84fd585f0220b65487df2044",
     "packages": [
         {
             "name": "npm-asset/bootstrap",
@@ -215,6 +215,39 @@
             ],
             "description": "Knockout makes it easier to create rich, responsive UIs with JavaScript",
             "homepage": "http://knockoutjs.com/"
+        },
+        {
+            "name": "npm-asset/lodash",
+            "version": "4.17.2-patch1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lodash/lodash.git",
+                "reference": "db9697dfef1eeaaec5c277426db213b58e36a2d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/db9697dfef1eeaaec5c277426db213b58e36a2d7",
+                "reference": "db9697dfef1eeaaec5c277426db213b58e36a2d7",
+                "shasum": ""
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-main": "lodash.js",
+                "npm-asset-repository": "lodash/lodash",
+                "npm-asset-scripts": {
+                    "test": "echo \"See https://travis-ci.org/lodash/lodash-cli for testing details.\""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                "John-David Dalton <john.david.dalton@gmail.com> (http://allyoucanleet.com/)",
+                "John-David Dalton <john.david.dalton@gmail.com> (http://allyoucanleet.com/)",
+                "Mathias Bynens <mathias@qiwi.be> (https://mathiasbynens.be/)"
+            ],
+            "description": "Lodash modular utilities.",
+            "homepage": "https://lodash.com/"
         },
         {
             "name": "npm-asset/requirejs",

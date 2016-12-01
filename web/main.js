@@ -5,6 +5,7 @@ require.config({
         'sammy': ['vendor/npm/sammy/lib/sammy'],
         'jquery': ['vendor/npm/jquery/dist/jquery'],
         'knockout': ['vendor/npm/knockout/build/output/knockout-latest'],
+        'lodash': ['vendor/npm/lodash/lodash'],
         'text': ['vendor/npm/requirejs-text/text']
     },
     urlArgs: "bust=" + (new Date()).getTime()
