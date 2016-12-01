@@ -4,6 +4,10 @@ define(function (require) {
     var sammy = require('sammy'),
         jquery = require('jquery');
 
+    var WebmailViewModel = function () {
+        var self = this;
+    };
+
     return sammy('#main', function () {
 
         this.get('#/', function () {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cb7abfc2e8607cf3b219784c75faca30",
-    "content-hash": "a2578f2e9982efedf9c28304f0ff4c2a",
+    "hash": "c3120bbb3cd0fc78b8c87d82cc72585c",
+    "content-hash": "2256e56b6abcd6ad7099d4a505c6266f",
     "packages": [
         {
             "name": "npm-asset/bootstrap",
@@ -174,6 +174,47 @@
                 "jquery",
                 "library"
             ]
+        },
+        {
+            "name": "npm-asset/knockout",
+            "version": "3.4.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/knockout/-/knockout-3.4.1.tgz",
+                "reference": null,
+                "shasum": "8bd057bde8f7d0a02b93dda433c2a8d942d8a9a0"
+            },
+            "require-dev": {
+                "npm-asset/closure-compiler": "~0.2.1",
+                "npm-asset/grunt": "~0.4.1",
+                "npm-asset/grunt-cli": "~0.1.0"
+            },
+            "type": "npm-asset-library",
+            "extra": {
+                "npm-asset-bugs": {
+                    "url": "https://github.com/knockout/knockout/issues"
+                },
+                "npm-asset-main": "build/output/knockout-latest.debug.js",
+                "npm-asset-directories": [],
+                "npm-asset-repository": {
+                    "type": "git",
+                    "url": "git+https://github.com/knockout/knockout.git"
+                },
+                "npm-asset-scripts": {
+                    "prepublish": "grunt",
+                    "test": "node spec/runner.node.js"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "The Knockout.js team"
+                }
+            ],
+            "description": "Knockout makes it easier to create rich, responsive UIs with JavaScript",
+            "homepage": "http://knockoutjs.com/"
         },
         {
             "name": "npm-asset/requirejs",
