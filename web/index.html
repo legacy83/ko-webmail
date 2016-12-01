@@ -16,14 +16,37 @@
     <div class="header clearfix">
         <nav>
             <ul class="nav nav-pills pull-right">
-                <li role="presentation"><a href="#/">Home</a></li>
-                <li role="presentation"><a href="#/about">About</a></li>
+                <li role="presentation"><a href="#/Inbox">Inbox</a></li>
+                <li role="presentation"><a href="#/Archive">Archive</a></li>
+                <li role="presentation"><a href="#/Sent">Sent</a></li>
+                <li role="presentation"><a href="#/Spam">Spam</a></li>
             </ul>
         </nav>
         <h3 class="text-muted"><a href="#/">RequireJS Minimal</a></h3>
     </div>
 
-    <main id="main" class="main"></main>
+    <main id="main" class="main">
+
+        <table class="table" data-bind="with: chosenFolderData">
+            <thead>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Subject</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody data-bind="foreach: mails">
+            <tr>
+                <td data-bind="text: from"></td>
+                <td data-bind="text: to"></td>
+                <td data-bind="text: subject"></td>
+                <td data-bind="text: date"></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </main>
 
     <footer class="footer">
         <p>&copy; 2016 Untitled, Inc.</p>

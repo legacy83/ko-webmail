@@ -1,25 +1,30 @@
 'use strict';
 
 define(function (require) {
-    var sammy = require('sammy'),
+    var ko = require('knockout'),
+        sammy = require('sammy'),
         jquery = require('jquery');
 
     var WebmailViewModel = function () {
         var self = this;
+        self.chosenFolderData = ko.observable();
+        self.chosenMailData = ko.observable();
+
+        self.chooseFolder = function (folder) {
+            self.chosenMailData(null);
+            jquery.get("/data/mail." + folder + ".json", {folder: folder}, self.chosenFolderData);
+        };
     };
 
     return sammy('#main', function () {
 
-        this.get('#/', function () {
+        var webmailViewModel = new WebmailViewModel();
+        ko.applyBindings(webmailViewModel);
+
+        this.get('#/:folder', function () {
             jquery(".nav a").parent().removeClass('active');
             jquery(".nav a[href='#/']").parent().addClass('active');
-            this.$element().html(require('text!src/pages/home/home.html'));
-        });
-
-        this.get('#/about', function () {
-            jquery(".nav a").parent().removeClass('active');
-            jquery(".nav a[href='#/about']").parent().addClass('active');
-            this.$element().html(require('text!src/pages/about/about.html'));
+            webmailViewModel.chooseFolder(this.params.folder);
         });
 
     });

@@ -2,8 +2,9 @@
 
 require.config({
     paths: {
-        'jquery': ['vendor/npm/jquery/dist/jquery'],
         'sammy': ['vendor/npm/sammy/lib/sammy'],
+        'jquery': ['vendor/npm/jquery/dist/jquery'],
+        'knockout': ['vendor/npm/knockout/build/output/knockout-latest'],
         'text': ['vendor/npm/requirejs-text/text']
     }
 });
