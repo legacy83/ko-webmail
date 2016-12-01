@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>RequireJS Minimal</title>
+    <title>KO Webmail</title>
 
     <link href="vendor/npm/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -22,31 +22,10 @@
                 <li role="presentation"><a href="#/Spam">Spam</a></li>
             </ul>
         </nav>
-        <h3 class="text-muted"><a href="#/">RequireJS Minimal</a></h3>
+        <h3 class="text-muted">KO Webmail</h3>
     </div>
 
-    <main id="main" class="main">
-
-        <table class="table" data-bind="with: chosenFolderData">
-            <thead>
-            <tr>
-                <th>From</th>
-                <th>To</th>
-                <th>Subject</th>
-                <th>Date</th>
-            </tr>
-            </thead>
-            <tbody data-bind="foreach: mails">
-            <tr>
-                <td data-bind="text: from"></td>
-                <td data-bind="text: to"></td>
-                <td data-bind="text: subject"></td>
-                <td data-bind="text: date"></td>
-            </tr>
-            </tbody>
-        </table>
-
-    </main>
+    <main id="main" class="main"></main>
 
     <footer class="footer">
         <p>&copy; 2016 Untitled, Inc.</p>

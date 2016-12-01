@@ -4,36 +4,24 @@ define(function (require) {
     var ko = require('knockout'),
         sammy = require('sammy'),
         jquery = require('jquery'),
-        WebmailViewModel = require('src/webmailViewModel');
+        navUtility = require('src/utility/nav'),
+        WebmailViewModel = require('src/viewModel/webmail');
 
     return sammy('#main', function () {
+        this.$element().append(require('text!templates/webmail.html'));
+        this.$element().append(require('text!templates/webmailItem.html'));
 
         var webmailViewModel = new WebmailViewModel();
         ko.applyBindings(webmailViewModel);
 
-        this.get('#/Inbox', function () {
-            jquery(".nav a").parent().removeClass('active');
-            jquery(".nav a[href='#/Inbox']").parent().addClass('active');
-            webmailViewModel.chooseInboxFolder();
+        this.get('#/:folder', function () {
+            navUtility.activate(this.params.folder);
+            webmailViewModel.chooseFolder(this.params.folder);
         });
 
-        this.get('#/Archive', function () {
-            jquery(".nav a").parent().removeClass('active');
-            jquery(".nav a[href='#/Archive']").parent().addClass('active');
-            webmailViewModel.chooseArchiveFolder();
+        this.get('#/:folder/:mailId', function () {
+            navUtility.activate(this.params.folder);
+            webmailViewModel.chooseMail(this.params.mailId);
         });
-
-        this.get('#/Sent', function () {
-            jquery(".nav a").parent().removeClass('active');
-            jquery(".nav a[href='#/Sent']").parent().addClass('active');
-            webmailViewModel.chooseSentFolder();
-        });
-
-        this.get('#/Spam', function () {
-            jquery(".nav a").parent().removeClass('active');
-            jquery(".nav a[href='#/Spam']").parent().addClass('active');
-            webmailViewModel.chooseSpamFolder();
-        });
-
     });
 });
