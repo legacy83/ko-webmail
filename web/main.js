@@ -6,7 +6,8 @@ require.config({
         'jquery': ['vendor/npm/jquery/dist/jquery'],
         'knockout': ['vendor/npm/knockout/build/output/knockout-latest'],
         'text': ['vendor/npm/requirejs-text/text']
-    }
+    },
+    urlArgs: "bust=" + (new Date()).getTime()
 });
 
 define(function (require) {
@@ -14,6 +15,6 @@ define(function (require) {
         sammyApp = require('src/sammy.app');
 
     jquery(document).ready(function () {
-        sammyApp.run('#/');
+        sammyApp.run('#/Inbox');
     });
 });
