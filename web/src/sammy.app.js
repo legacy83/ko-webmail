@@ -8,8 +8,7 @@ define(function (require) {
         WebmailViewModel = require('src/viewModel/webmail');
 
     return sammy('#main', function () {
-        this.$element().append(require('text!templates/webmail.html'));
-        this.$element().append(require('text!templates/webmailItem.html'));
+        this.$element().html(require('text!src/viewModel/webmail.html'));
 
         var webmailViewModel = new WebmailViewModel();
         ko.applyBindings(webmailViewModel);
