@@ -1,11 +1,11 @@
 {
-  "name": "trsenna/requirejs-minimal",
-  "description": "RequireJS Minimal Project Template",
+  "name": "trsenna/ko-webmail",
+  "description": "KO Webmail",
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/trsenna/requirejs-minimal/issues",
-    "source": "https://github.com/trsenna/requirejs-minimal"
+    "issues": "https://github.com/trsenna/ko-webmail/issues",
+    "source": "https://github.com/trsenna/ko-webmail"
   },
   "minimum-stability": "stable",
   "repositories": [
