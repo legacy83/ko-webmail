@@ -2,7 +2,6 @@
 
 define(function (require) {
     var ko = require('knockout'),
-        jquery = require('jquery'),
         mailAPI = require('src/api/mail');
 
     return function () {

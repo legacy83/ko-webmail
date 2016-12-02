@@ -3,7 +3,6 @@
 define(function (require) {
     var ko = require('knockout'),
         sammy = require('sammy'),
-        jquery = require('jquery'),
         navUtility = require('src/utility/nav'),
         WebmailViewModel = require('src/viewModel/webmail');
 
