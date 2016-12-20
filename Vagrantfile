@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
         ubuntu14.vm.hostname = "ko-webmail"
         ubuntu14.vm.network "private_network", ip: "192.168.27.14"
         ubuntu14.vm.provision "ansible" do |ansible|
-            ansible.playbook = "_vagrant/playbook.yml"
+            ansible.playbook = "playbook.yml"
         end
     end
 end

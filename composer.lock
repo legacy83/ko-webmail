@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f6e03f9c6fdc88f23a03edf30982de3",
-    "content-hash": "06295cf4a914ee59fe0cc77b8e157e9e",
+    "hash": "e17d4f2978ec47c59901211eb390c9f4",
+    "content-hash": "8b76d90ff2f5b82cff04fe5f31fd5e5a",
     "packages": [
         {
             "name": "npm-asset/bootstrap",
@@ -294,32 +294,30 @@
         {
             "name": "npm-asset/requirejs-text",
             "version": "2.0.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/requirejs/text.git",
-                "reference": "d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/requirejs/text/zipball/d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f",
-                "reference": "d04de4ffd7bf5ba6cb80cdca2d40d4f6f52a1b1f",
-                "shasum": ""
+                "type": "tar",
+                "url": "https://registry.npmjs.org/requirejs-text/-/requirejs-text-2.0.15.tgz",
+                "reference": null,
+                "shasum": "13138733613fc4457b7e1247e8cb751df7aa5429"
             },
             "type": "npm-asset-library",
             "extra": {
                 "npm-asset-bugs": {
-                    "web": "https://github.com/requirejs/text/issues"
+                    "url": "https://github.com/requirejs/text/issues"
                 },
                 "npm-asset-main": "text.js",
+                "npm-asset-directories": [],
                 "npm-asset-repository": {
                     "type": "git",
-                    "url": "https://github.com/requirejs/text.git"
-                }
+                    "url": "git+https://github.com/requirejs/text.git"
+                },
+                "npm-asset-scripts": []
             },
             "license": [
                 "MIT"
             ],
-            "description": "An AMD loader plugin for loading text resources."
+            "description": "An AMD loader plugin for loading text resources.",
+            "homepage": "https://github.com/requirejs/text#readme"
         },
         {
             "name": "npm-asset/sammy",
@@ -348,16 +346,16 @@
     "packages-dev": [
         {
             "name": "trsenna/gozma14",
-            "version": "0.6.0",
+            "version": "0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trsenna/gozma14.git",
-                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb"
+                "reference": "14dfbf976d65590ac916e7775e972e7cb9380270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/012c24e72b8820bb71a04ab832611d01a4ac6feb",
-                "reference": "012c24e72b8820bb71a04ab832611d01a4ac6feb",
+                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/14dfbf976d65590ac916e7775e972e7cb9380270",
+                "reference": "14dfbf976d65590ac916e7775e972e7cb9380270",
                 "shasum": ""
             },
             "type": "project",
@@ -375,7 +373,7 @@
                 "issues": "https://github.com/trsenna/gozma14/issues",
                 "source": "https://github.com/trsenna/gozma14"
             },
-            "time": "2016-07-15 00:43:01"
+            "time": "2016-12-19 20:29:39"
         }
     ],
     "aliases": [],
