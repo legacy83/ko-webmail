@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e17d4f2978ec47c59901211eb390c9f4",
-    "content-hash": "8b76d90ff2f5b82cff04fe5f31fd5e5a",
+    "hash": "19b34a3d5e6d2eb935d9dcb898722be0",
+    "content-hash": "23c2fdd1dbccc695c9f95acd3f844891",
     "packages": [
         {
             "name": "npm-asset/bootstrap",
@@ -218,16 +218,16 @@
         },
         {
             "name": "npm-asset/lodash",
-            "version": "4.17.2-patch1",
+            "version": "4.17.3-patch1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lodash/lodash.git",
-                "reference": "db9697dfef1eeaaec5c277426db213b58e36a2d7"
+                "reference": "b93c3b1ee8d82fa5e6b2da200a241015f9b1c783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lodash/lodash/zipball/db9697dfef1eeaaec5c277426db213b58e36a2d7",
-                "reference": "db9697dfef1eeaaec5c277426db213b58e36a2d7",
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/b93c3b1ee8d82fa5e6b2da200a241015f9b1c783",
+                "reference": "b93c3b1ee8d82fa5e6b2da200a241015f9b1c783",
                 "shasum": ""
             },
             "type": "npm-asset-library",
@@ -346,16 +346,16 @@
     "packages-dev": [
         {
             "name": "trsenna/gozma14",
-            "version": "0.8.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trsenna/gozma14.git",
-                "reference": "14dfbf976d65590ac916e7775e972e7cb9380270"
+                "reference": "78cebb800aac60a9dc87716b6d897a403b404381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/14dfbf976d65590ac916e7775e972e7cb9380270",
-                "reference": "14dfbf976d65590ac916e7775e972e7cb9380270",
+                "url": "https://api.github.com/repos/trsenna/gozma14/zipball/78cebb800aac60a9dc87716b6d897a403b404381",
+                "reference": "78cebb800aac60a9dc87716b6d897a403b404381",
                 "shasum": ""
             },
             "type": "project",
@@ -373,7 +373,7 @@
                 "issues": "https://github.com/trsenna/gozma14/issues",
                 "source": "https://github.com/trsenna/gozma14"
             },
-            "time": "2016-12-19 20:29:39"
+            "time": "2016-12-23 23:25:33"
         }
     ],
     "aliases": [],
